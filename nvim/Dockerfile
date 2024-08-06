@@ -19,6 +19,6 @@ RUN apk add --no-cache \
 RUN npm install -g neovim
 RUN apk add --no-cache py3-pynvim
 
-COPY init.lua /root/.config/nvim/init.lua
+COPY nvim/init.lua /root/.config/nvim/init.lua
 
 CMD ["nvim"]
